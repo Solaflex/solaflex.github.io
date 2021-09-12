@@ -1,167 +1,32 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Solaflex</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-    <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="https://avatars0.githubusercontent.com/u/5030549?v=4" type="image/png"></head>
+<!DOCTYPE html>
+<html lang="en">
 
-  <body>
-    <div id="loading">
-      <div id="spinner"></div>
-    </div>
-    <div id="profile">
-      <div id="profile_img" style="background: url(https://avatars0.githubusercontent.com/u/5030549?v=4) center;"></div>
-      <div id="username"><span style="display:none;">null</span><a href="https://github.com/Solaflex">@Solaflex</a></div>
-      <div id="userbio" style="display: block;">Cloud Engineer Azure for a large multinational Insurance, based in Switzerland</div>
-      <div id="about">
-                <span style="display:block;"><i class="fas fa-users"></i> &nbsp; Baloise Versicherung AG</span>
-                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-link"></i> &nbsp; <a href=""></a></span>
-                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Basel</span>
-                <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
-                <div class="socials">
-                <span style="display:none !important;"><a href="https://www.twitter.com/null" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.dribbble.com/null" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
-                <span style="display:block;"><a href="https://www.linkedin.com/in/jan-wächter-aa14678b/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
-                </div>
-                </div>
-    </div>
-    <div id="display">
-      <div id="forks" style="display:none;">
-        <h1>Forks.</h1>
-        <div class="projects" id="forks_section"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jan Wächter</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="https://avatars0.githubusercontent.com/u/5030549?v=4" type="image/png">
+</head>
+
+<body>
+  <div id="profile">
+    <div id="profile_img" style="background: url(https://avatars0.githubusercontent.com/u/5030549?v=4) center;"></div>
+    <div id="username"><span style="display:none;">null</span>Jan Wächter</div>
+    <div id="userbio" style="display: block;">Cloud Architect</div>
+    <div id="about">
+      <span style="display:block;"><i class="fas fa-users"></i> Baloise Versicherung AG</span>
+      <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp; Basel, Switzerland</span>
+      <div class="socials">
+        <span style="display:block;"><a href="https://www.linkedin.com/in/jan-wächter-aa14678b/" target="_blank"
+            class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+        <span style="display:block !important;"><a href="https://www.github.com/solaflex" target="_blank"
+            class="socials"><i class="fab fa-github"></i></a></span>
       </div>
-      <div id="pgp_section">
-        <div id="pgp" style="width: 500px;">
-		<pre>
-  <code>
------BEGIN PGP PUBLIC KEY BLOCK-----
-
-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
-AyYS9BT2BPExHq4=
-=gYlA
------END PGP PUBLIC KEY BLOCK-----
-
-  </code>
-</pre>
-		
-		</div>
-      </div>      
     </div>
-    <script type="text/javascript">
-      setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-        }, 800);
-      }, 1500);
-      $.getJSON("blog.json", function(blog) {
-        blog = blog || [];
-        if (blog.length == 0) {
-          return (document.getElementById("blog_section").style.display =
-            "none");
-        }
-        for (var i = 0; i < blog.length; i++) {
-          $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
-                <section>
-                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
-                    <div class="blog_container">
-                        <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}
-                        </div>
-                    </div>
-                </section>
-            </a>
-            `);
-        }
-      }).fail(function() {
-        return (document.getElementById("blog_section").style.display = "none");
-      });
-    </script>
-
-    <script>
-      const magicProjectsGrid = new MagicGrid({
-        container: "#work_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
-
-      const magicForksGrid = new MagicGrid({
-        container: "#forks_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
-
-      $("document").ready(() => {
-        magicProjectsGrid.listen();
-        magicForksGrid.listen();
-      });
-    </script>
-  
-
-</body></html>
+  </div>
+</body>
+</html>

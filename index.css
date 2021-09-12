@@ -50,7 +50,7 @@ body {
 }
 
 #profile {
-  width: 24vw;
+  width: 100%;
   padding: 4vh 3vw;
   height: 92vh;
   display: flex;
